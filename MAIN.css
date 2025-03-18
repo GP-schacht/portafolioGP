@@ -1,0 +1,54 @@
+.body{
+    margin: 0;
+
+    color: white;
+}
+.background{
+    background-color: black;
+    height: 120vh;
+}
+.header {
+    height: 120px;
+    width: 100%;
+    padding: 5px;
+    
+}
+.nav-title {
+    justify-content: center;
+
+}
+.nav-elementos{
+   list-style-type: none;
+   display: flex;
+   justify-content: center;
+   gap: 10px;
+    
+}
+
+.main{
+    padding-block: 5px;
+    padding-inline: 10px;
+  
+}
+
+.sec-acerca{
+    height: 100px;
+    background-color: orange;
+}
+
+.sec-tecnologias{
+    height: 100px;
+    background-color: orange;
+}
+
+.sec-proyectos{
+    height: 100px;
+    background-color: orange;
+}
+
+.foot-elementos {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
