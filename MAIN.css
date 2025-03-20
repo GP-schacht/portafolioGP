@@ -1,54 +1,143 @@
-.body{
-    margin: 0;
 
-    color: white;
+:root {
+    --primary-color: #ffa500;
+    --secondary-color: #0e0e0e ;
+    --accent-color: ;
+    --text-color: #ffffff;
+    --background-color: #000000;
+}
+.body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    color: var(--text-color);  
+}
+
+.body::-webkit-scrollbar{
+    display: none;
 }
 .background{
-    background-color: black;
-    height: 120vh;
+    background-color:var(--background-color);
+   
+}
+h1{
+    margin: 0;
+    font-size: 4rem;
+}
+
+h2{
+    margin: 0;
 }
 .header {
-    height: 120px;
+    
+    position: fixed;
+    top: 0;
     width: 100%;
-    padding: 5px;
+    padding: 0px;
+    z-index: 1;
+}
+.navbar{
+    background-color: #0e0e0e;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    
+    align-items: center;
     
 }
 .nav-title {
+    font-family: sans-serif;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
     justify-content: center;
+    align-items: center;
+    letter-spacing: .1rem;
+    font-size: 3rem;
+    gap: .5rem;
 
 }
+
+#nav-tittle2{
+    background-color: var(--primary-color);
+    border-radius: 0.3rem;
+padding-inline: .3rem;
+    color: var(--background-color);
+}
+
 .nav-elementos{
+   width: fit-content;
    list-style-type: none;
    display: flex;
    justify-content: center;
-   gap: 10px;
-    
+   padding: 0;
+   gap: 15px;  
+}
+
+li{
+    display: flex;
+    align-items: center;
 }
 
 .main{
     padding-block: 5px;
     padding-inline: 10px;
-  
+    justify-items: center;
+    padding-top: 10rem;
+    z-index: 0;
+    
 }
 
-.sec-acerca{
-    height: 100px;
-    background-color: orange;
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
-.sec-tecnologias{
-    height: 100px;
-    background-color: orange;
+.sec-cont{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    padding: 5px;
+    gap: 15px;
+    animation: gradientMove 4s infinite;
 }
 
-.sec-proyectos{
-    height: 100px;
-    background-color: orange;
+.sec-linea{
+    height: 100%;
+    position: absolute; 
+    top: 0; 
+    bottom: 0; 
+    width: 1px;
+    background: linear-gradient(to bottom, var(--primary-color), transparent);
 }
 
+
+.sec-texto{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    letter-spacing: 1px;
+    padding-inline: 10px;
+}
+.sec-ficha{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.sec-ficha,img{
+    height: 15rem;
+}
+
+footer{
+    background-color: var(--secondary-color);
+    padding: .5rem;
+}
 .foot-elementos {
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: .5rem;
+    margin: 0;
 }
