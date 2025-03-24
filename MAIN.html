@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="MAIN.css" />
+    <link rel="stylesheet" href="MAIN_Responsive.css">
     <title>Document</title>
   </head>
   <body class="body">
-    <div class="background">
+    <div class="contenido">
       <header class="header">
         <div class="navbar">
           <div class="nav-title">
@@ -18,16 +19,22 @@
             <li>About Gael</li>
             <li>Proyectos</li>
             <li>Herramientas</li>
+            <li>Contacto</li>
           </ul>
+          <button class="btnMenu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
         </div>
       </header>
-      <br />
+   
       <main class="main">
-        <section class="sec-cont">
+        <section class="sec-body">
           <span class="sec-linea"> </span>
-          <div class="sec-texto">
-            <h2>acerca de mi</h2>
-            <div class="sec-ficha">
+          <div class="sec-main">
+            <h2>About Gael</h2>
+            <div class="sec-cont">
               <img src="recursos/user_place_holder.jpg"  alt="">
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi
@@ -36,35 +43,14 @@
                 quaerat deserunt. Veritatis, accusantium.
               </p>
             </div>
+            <div class="sec-cont2"></div>
+            <div class="sec-cont3"></div>
+          </div>
+
           
-          </div>
         </section>
         <br />
-        <section class="sec-cont">
-          <span class="sec-linea"> </span>
-          <div class="sec-texto">
-            <h2>cosas que se usar</h2>
-           <div class="galley_proyectos">
-            <img src="recursos/place_holder.jpg" id="img_proyecto1" alt="">
-            <img src="recursos/place_holder.jpg" id="img_proyecto1" alt="">
-            <img src="recursos/place_holder.jpg" id="img_proyecto1" alt="">
-            <img src="recursos/place_holder.jpg" id="img_proyecto1" alt="">
-           </div>
-          </div>
-        </section>
-        <br />
-        <section class="sec-cont">
-          <span class="sec-linea"> </span>
-          <div class="sec-texto">
-            <h2>cosas que he hecho con las cosas que se usar</h2>
-            <div class="galley_proyectos">
-              <img src="recursos/place_holder.jpg" id="img_proyecto1" alt="">
-              <img src="recursos/place_holder.jpg" id="img_proyecto1" alt="">
-              <img src="recursos/place_holder.jpg" id="img_proyecto1" alt="">
-              <img src="recursos/place_holder.jpg" id="img_proyecto1" alt="">
-             </div>
-          </div>
-        </section>
+        
       </main>
       <footer class="footer">
         <ul class="foot-elementos">
@@ -74,5 +60,6 @@
         </ul>
       </footer>
     </div>
+    <script src="Scripts.js"></script>
   </body>
 </html>
