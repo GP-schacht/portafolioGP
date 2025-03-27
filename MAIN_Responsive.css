@@ -4,39 +4,58 @@
     align-items: center;
   }
 
-  .main{
-    margin-top: 10rem;
-    padding-inline: 3rem;
+  .main {
+    margin-top: 11rem;
     z-index: 1;
-    
-}
+  }
+  .sec {
+    padding-inline: 3rem;
+  }
 }
 
-@media (max-width: 435px) {
+@media (max-width: 700px) {
+  .ficha-cont {
+    flex-direction: column;
+    gap: 2rem;
+  }
 
-    .main{
-        margin-top: 6.6rem;
-        padding-inline: 3rem;
-        z-index: 1;
-        
-    }
-    .navbar{
-        background-color: #0e0e0e;
-        display: flex;
-        flex-direction: row;
-        padding: 1rem;
-        justify-content: space-between;
-      
-        gap: 1rem;
-        
-    }
+  .sobre-mi {
+    width: 100%;
+  }
+
+  .redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 10rem;
+    width: 100%;
+    gap: 1rem;
+  }
+.herramientas{
+  width: 100%;
+}
+
+}
+@media (max-width: 550px) {
+  .main {
+    z-index: 1;
+  }
+  .navbar {
+    background-color: #0e0e0e;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    justify-content: space-between;
+
+    gap: 1rem;
+  }
   .btnMenu {
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    gap: 0.57rem;
-    width: 2.6rem;
-    height: 2rem;
+    gap: .5rem;
+    width: 2.5rem;
+    height: 1.5rem;
     z-index: 5;
     background: transparent;
     border: none;
@@ -52,19 +71,54 @@
     transform-origin: left;
   }
 
-  .nav-elementos{
-   display: none;
- }
-
- .btnMenu.active .spam:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
+  .nav-elementos {
+    display: none;
   }
-  
+
+  .btnMenu.active :first-child {
+    transform: rotate(45deg) 
+  }
+
   .btnMenu.active .bar:nth-child(2) {
     opacity: 0;
   }
-  
+
   .btnMenu.active .bar:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
+    transform: rotate(-45deg) 
   }
+  .baner-cont {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ttlNombre {
+    position: relative;
+    height: fit-content;
+    bottom: 0rem;
+    font-size: 2rem;
+  }
+
+  .tb1 {
+    position: relative;
+    bottom: 0rem;
+    height: 3rem;
+    align-items: center;
+  }
+
+  .perfil {
+    flex-direction: column;
+  }
+
+  .sec {
+    padding-inline: 2rem;
+  }
+  .sec-ficha {
+    padding: 2rem;
+  }
+  .redes {
+   
+    flex-direction: column;
+  
+  }
+
 }

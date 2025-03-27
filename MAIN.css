@@ -8,6 +8,7 @@
 
 body {
   margin: 0 auto;
+  font-family: sans-serif;
 }
 .body::-webkit-scrollbar {
   padding: 0;
@@ -90,69 +91,107 @@ li {
 }
 
 .main {
-  margin-top: 6.6rem;
-  padding-top: 3rem;
-  padding-inline: 3rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 7rem;
   z-index: 1;
-  height: 120vh;
+
 }
 
-@keyframes gradientMove {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+
+.baner-cont{
+display: flex;
+flex-direction: row;
+padding: 2.5rem;
+min-height: 15rem;
+justify-content: space-between;
+background-color: var(--secondary-color);
+gap: 1rem;
 }
 
-.sec-body {
+.perfil{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.ttlNombre{
   position: relative;
-  display: flex;
-  flex-direction: row;
   height: fit-content;
-  padding: 5px;
-  gap: 15px;
+  bottom: -10rem;
+  font-size: 2rem;
+}
+.ftoPerfil{
+
+height: 15rem;
 }
 
-.sec-linea {
-  height: 100%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 1px;
-  animation: gradientMove 4s infinite;
-  background: linear-gradient(to bottom, var(--primary-color), transparent);
+.tb1{
+  position: relative;
+  bottom: -10rem;
+  height: 3rem;
+}
+.tb1Fl1{
+  font-size: 1.5rem;
 }
 
-.sec-main {
-  display: grid;
-  height: fit-content;
-  letter-spacing: 1px;
-  padding-inline: 10px;
-  gap: 1rem;
+.sec {
+padding-inline: 5rem;
+margin-block: 5rem;
 }
-.sec-cont {
+.ficha-cont{
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  
+}
+
+.sobre-mi {
+  width: 30%;
+}
+
+.redes{
+  display: flex;
+  flex-direction: column;
+  height: 10rem;
+  width: 15%;
+  gap: 1rem;
+ 
+}
+
+.redes-op{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   gap: 1rem;
 }
-.sec-cont2 {
-  width: 10rem;
-  height: 10rem;
-  background-color: #ffa500;
+
+.redes-img{
+  height: 3rem;
+  width: 3rem;
+  background-size:contain;
 }
-.sec-cont3 {
-    width: 10rem;
-  height: 10rem;
+
+.redes-text{
+  font-size: 1rem;
+}
+.herramientas{
+  display: flex;
+  flex-direction:column ;
+  height: fit-content;
+  width: 40%;
+  gap: 1rem;
   background-color: var(--secondary-color);
 }
-.sec-cont,
-img {
-  height: 15rem;
+
+.carrusel{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.carrusel img{
+  height: 3rem;
+  width: 3rem;
 }
 
 footer {
