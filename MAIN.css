@@ -1,3 +1,4 @@
+
 :root {
   --primary-color: #ffa500;
   --secondary-color: #0e0e0e;
@@ -5,7 +6,14 @@
   --text-color: #ffffff;
   --background-color: #000000;
 }
-
+/*
+:root {
+  --primary-color: red;
+  --secondary-color: #fff;
+  --accent-color: ;
+  --text-color: black;
+  --background-color: white;
+}*/
 body {
   margin: 0 auto;
   font-family: sans-serif;
@@ -44,7 +52,7 @@ h2 {
   padding-inline: 5rem;
   top: 0;
   width: 100%;
-  background-color: #0e0e0e;
+  background-color: var(--secondary-color);
   gap: 1rem;
   z-index: 100;
 }
@@ -77,7 +85,7 @@ h2 {
   display: flex;
   justify-content: center;
   padding: 0;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .btnMenu {
@@ -141,7 +149,7 @@ margin-block: 5rem;
 .ficha-cont{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  gap: 10%;
   
 }
 
@@ -152,17 +160,31 @@ margin-block: 5rem;
 .redes{
   display: flex;
   flex-direction: column;
-  height: 10rem;
+  align-items: center;
   width: 15%;
   gap: 1rem;
  
 }
 
 .redes-op{
+  width: 5rem;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 1rem;
+  flex-direction: column;
+  padding-top: .5rem;
+  border-radius: 1.5rem;
+
+}
+
+.redes-op:hover{
+  background-color: var(--secondary-color);
+}
+.redes-op a{
+display: flex;
+flex-direction: column;
+text-decoration: none;
+color: var(--text-color);
+align-items: center;
+
 }
 
 .redes-img{
@@ -174,24 +196,98 @@ margin-block: 5rem;
 .redes-text{
   font-size: 1rem;
 }
+.herramientasBox{
+  display: flex;
+  padding-block: 1em;
+  justify-content: center;
+  background-color: var(--secondary-color);
+  width: 40%;
+}
 .herramientas{
   display: flex;
+  height: 100%;
+  width: 90%;
   flex-direction:column ;
-  height: fit-content;
-  width: 40%;
   gap: 1rem;
+  justify-content: space-between;
+  overflow: hidden;
   background-color: var(--secondary-color);
+  
 }
+
 
 .carrusel{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  position: relative;
+  gap:33.3%;
+  height: 5rem;
 }
 
+.uno a {
+  position: absolute;
+  animation-name: desplazamiento;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; 
+  animation-fill-mode: forwards;
+  left: 100%;
+}
+
+.dos a {
+  position: absolute;
+  animation-name: desplazamiento2;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  left: -5rem;
+}
+
+.tres a {
+  position: absolute;
+  display: inline-block;
+  animation-name: desplazamiento;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  left: 100%;
+}
+
+.tool1 {
+animation-delay: calc(10s / 3 * ( 3 - 3 ) * -1);
+}
+.tool2{
+animation-delay: calc(10s / 3 * ( 3 - 2 ) * -1);
+}
+.tool3{
+animation-delay: calc(10s / 3 * ( 3 - 1 ) * -1);
+}
+
+@keyframes desplazamiento {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-45rem);
+  }
+}
+
+@keyframes desplazamiento2 {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(45rem);
+  }
+}
+
+
+
 .carrusel img{
-  height: 3rem;
-  width: 3rem;
+  height: 5rem;
+  width:  5rem;
 }
 
 footer {

@@ -1,4 +1,4 @@
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 768px) {
   .navbar {
     flex-direction: column;
     align-items: center;
@@ -11,9 +11,7 @@
   .sec {
     padding-inline: 3rem;
   }
-}
 
-@media (max-width: 700px) {
   .ficha-cont {
     flex-direction: column;
     gap: 2rem;
@@ -25,14 +23,21 @@
 
   .redes {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 10rem;
+    flex-direction: unset;
+    flex-wrap: wrap;
     width: 100%;
-    gap: 1rem;
+    justify-content: space-between;
   }
-.herramientas{
-  width: 100%;
+  .herramientasBox{
+   
+    background-color: var(--secondary-color);
+    width: 100%;
+  }
+
+.carrusel{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 }
@@ -41,7 +46,7 @@
     z-index: 1;
   }
   .navbar {
-    background-color: #0e0e0e;
+
     display: flex;
     flex-direction: row;
     padding: 1rem;
@@ -115,10 +120,9 @@
   .sec-ficha {
     padding: 2rem;
   }
-  .redes {
-   
-    flex-direction: column;
-  
+
+  .carrusel{
+     gap: 10rem;
   }
 
 }
