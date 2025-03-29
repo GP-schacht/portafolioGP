@@ -256,15 +256,17 @@ align-items: center;
 }
 
 .tool1 {
-animation-delay: calc(10s / 3 * ( 3 - 3 ) * -1);
+animation-delay: calc(10s / 4 * ( 4 - 1 ) * -1);
 }
 .tool2{
-animation-delay: calc(10s / 3 * ( 3 - 2 ) * -1);
+animation-delay: calc(10s / 4 * ( 4 - 2 ) * -1);
 }
 .tool3{
-animation-delay: calc(10s / 3 * ( 3 - 1 ) * -1);
+animation-delay: calc(10s / 4 * ( 4 - 3 ) * -1);
 }
-
+.tool4{
+  animation-delay: calc(10s / 4 * ( 4 - 4) * -1);
+  }
 @keyframes desplazamiento {
   0% {
     transform: translateX(0%);
