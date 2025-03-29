@@ -227,7 +227,7 @@ align-items: center;
 .uno a {
   position: absolute;
   animation-name: desplazamiento;
-  animation-duration: 10s;
+  animation-duration: 25s;
   animation-timing-function: linear;
   animation-iteration-count: infinite; 
   animation-fill-mode: forwards;
@@ -237,7 +237,7 @@ align-items: center;
 .dos a {
   position: absolute;
   animation-name: desplazamiento2;
-  animation-duration: 10s;
+  animation-duration: 25s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-fill-mode: forwards;
@@ -248,25 +248,45 @@ align-items: center;
   position: absolute;
   display: inline-block;
   animation-name: desplazamiento;
-  animation-duration: 10s;
+  animation-duration: 25s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-fill-mode: forwards;
   left: 100%;
 }
 
-.tool1 {
-animation-delay: calc(10s / 4 * ( 4 - 1 ) * -1);
-}
-.tool2{
-animation-delay: calc(10s / 4 * ( 4 - 2 ) * -1);
-}
-.tool3{
-animation-delay: calc(10s / 4 * ( 4 - 3 ) * -1);
-}
-.tool4{
-  animation-delay: calc(10s / 4 * ( 4 - 4) * -1);
+  .uno a:nth-child(1) {
+  animation-delay: calc(25s / 3 * ( 3 - 1 ) * -1);
+  }a
+  .uno, a:nth-child(2){
+  animation-delay: calc(25s / 3 * ( 3 - 2 ) * -1);
   }
+  .uno, a:nth-child(3){
+  animation-delay: calc(25s / 3 * ( 3 - 3 ) * -1);
+  }
+
+ .dos a:nth-child(1) {
+  animation-delay: calc(25s / 3 * ( 3 - 1 ) * -1);
+  }
+  .dos a:nth-child(2){
+  animation-delay: calc(25s / 3 * ( 3 - 2 ) * -1);
+  }
+  .dos a:nth-child(3){
+  animation-delay: calc(25s / 3 * ( 3 - 3 ) * -1);
+  }
+
+.tres a:nth-child(1) {
+animation-delay: calc(25s / 4 * ( 4 - 1 ) * -1);
+}
+.tres a:nth-child(2){
+animation-delay: calc(25s / 4 * ( 4 - 2 ) * -1);
+}
+.tres a:nth-child(3){
+animation-delay: calc(25s / 4 * ( 4 - 3 ) * -1);
+}
+.tres a:nth-child(4){
+animation-delay: calc(25s / 4 * ( 4 - 4) * -1);
+}
 @keyframes desplazamiento {
   0% {
     transform: translateX(0%);
