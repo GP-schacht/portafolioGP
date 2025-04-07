@@ -1,96 +1,17 @@
-@media screen and (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: center;
-  }
 
+@media screen and (max-width: 550px) {
   .main {
-    margin-top: 11rem;
     z-index: 1;
   }
-  .sec {
-    padding-inline: 3rem;
-  }
-
-  .ficha-cont {
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  .sobre-mi {
-    width: 100%;
-  }
-
-  .redes {
+  .navbar {
     display: flex;
-    flex-direction: unset;
     flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-between;
-  }
-  .herramientasBox{
-   
-    background-color: var(--secondary-color);
-    width: 100%;
-  }
-
-.carrusel{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-}
-@media (max-width: 550px) {
-  .main {
-    z-index: 1;
-  }
-  .navbar {
-
-    display: flex;
     flex-direction: row;
     padding: 1rem;
     justify-content: space-between;
-
     gap: 1rem;
   }
-  .btnMenu {
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
-    width: 2.5rem;
-    height: 1.5rem;
-    z-index: 5;
-    background: transparent;
-    border: none;
-    top: 2.1rem;
-    left: 2rem;
-  }
-  .btnMenu span {
-    transition: all 0.5s;
-    background-color: #dcdcdc;
-    height: 0.15rem;
-    width: 100%;
-    border-radius: 5px;
-    transform-origin: left;
-  }
 
-  .nav-elementos {
-    display: none;
-  }
-
-  .btnMenu.active :first-child {
-    transform: rotate(45deg) 
-  }
-
-  .btnMenu.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-
-  .btnMenu.active .bar:nth-child(3) {
-    transform: rotate(-45deg) 
-  }
   .baner-cont {
     flex-direction: column;
     align-items: center;
@@ -115,7 +36,7 @@
   }
 
   .sec {
-    padding-inline: 2rem;
+    padding-inline: 5%;
   }
   .sec-ficha {
     padding: 2rem;
@@ -125,4 +46,70 @@
      gap: 10rem;
   }
 
+  
+
 }
+
+@media screen and (max-width: 1300px) {
+  .proyecto{
+    width: 45%;
+  }
+  .baner-cont {
+    background-image: url(recursos/banner2.png);
+    background-position: center center;
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+
+  .main {
+    margin-top: 11rem;
+    z-index: 1;
+  }
+  
+
+  .ficha-cont {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .baner-cont {
+   
+    background-image: url(recursos/banner.png);
+  
+  }
+  .sobre-mi {
+    width: 100%;
+  }
+
+  .redes {
+    display: flex;
+    flex-direction: unset;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .herramientasBox{
+   
+    background-color: var(--secondary-color);
+    width: 100%;
+  }
+
+.carrusel{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.proyectos-cont{
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.proyecto{
+  width: 100%;
+}
+
+}
+
