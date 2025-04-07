@@ -31,9 +31,12 @@ body {
   color: var(--text-color);
   width: 100%;
 }
+p{
+  line-height: 1.8;
+}
 h1 {
   margin: 0;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 h2 {
@@ -184,7 +187,7 @@ li {
 .ficha-cont {
   display: flex;
   flex-direction: row;
-  gap: 10%;
+  justify-content: space-between;
 }
 
 .sobre-mi {
@@ -243,10 +246,6 @@ li {
   justify-content: space-between;
   overflow: hidden;
   background-color: var(--secondary-color);
-}
-
-.herramientas a :hover{
-  background-color: var(--primary-color);
 }
 
 
@@ -358,11 +357,13 @@ a:nth-child(3) {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .proyecto {
-  width: 31%;
+  width: 30%;
+  text-decoration: none;
+  color: var(--text-color);
 }
 .proyecto-banner {
   position: relative;
@@ -374,7 +375,9 @@ a:nth-child(3) {
 .proyecto-banner img{
   position: relative;
   width: 100%;
+  height: 100%;
   border-radius: 0.5rem;
+  object-fit: cover;
 }
 
 footer {
