@@ -31,7 +31,7 @@ body {
   color: var(--text-color);
   width: 100%;
 }
-p{
+p {
   line-height: 1.8;
 }
 h1 {
@@ -41,6 +41,10 @@ h1 {
 
 h2 {
   margin: 0;
+}
+a{
+  color: var(--text-color);
+  text-decoration: none;
 }
 .header {
   display: flex;
@@ -54,14 +58,14 @@ h2 {
   align-items: center;
   box-sizing: border-box;
   padding: 1rem;
-  padding-inline: 10%;
+  padding-inline: 2.5rem;
   top: 0;
   width: 100%;
   background-color: var(--secondary-color);
   gap: 1rem;
   z-index: 100;
 }
-.navbar :first-child {
+.navbar .nav-title {
   justify-content: left;
 }
 
@@ -87,6 +91,58 @@ h2 {
   border-radius: 0.3rem;
   padding-inline: 0.3rem;
   color: var(--background-color);
+}
+
+.sidebar{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+}
+
+.desplegableMenu{
+  display: none;
+  animation: slideIn 0.5s ease forwards;
+}
+
+.desplegableMenu nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  gap: 10%;
+}
+
+.desplegableMenu.active {
+  display: block;
+  animation: slideIn 0.5s ease forwards;
+}
+
+.desplegableMenu.hide {
+  animation: slideOut 0.5s ease forwards; /* Salida */
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(20px); /* Desplazamiento inicial */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* Posición final */
+  }
+}
+
+@keyframes slideOut {
+  from {
+    opacity: 1;
+    transform: translateX(0); /* Posición inicial */
+  }
+  to {
+    opacity: 0;
+    transform: translateX(20px); /* Desplazamiento final */
+  }
 }
 
 .btnMenu {
@@ -155,10 +211,9 @@ li {
   display: flex;
   flex-direction: row;
   gap: 1rem;
-
 }
 
-.perfil img{
+.perfil img {
   max-height: 15rem;
   object-fit: cover;
 }
@@ -169,7 +224,6 @@ li {
   bottom: -12rem;
   font-size: 2rem;
 }
-
 
 .tb1 {
   position: relative;
@@ -248,8 +302,6 @@ li {
   background-color: var(--secondary-color);
 }
 
-
-
 .carrusel {
   display: flex;
   flex-direction: row;
@@ -275,7 +327,7 @@ li {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-fill-mode: forwards;
-  left: -5rem; 
+  left: -5rem;
 }
 
 .tres a {
@@ -347,8 +399,7 @@ a:nth-child(3) {
 .carrusel img {
   height: 5rem;
   width: 5rem;
-  border-radius: .5rem;
-
+  border-radius: 0.5rem;
 }
 
 .proyectos-cont {
@@ -370,9 +421,8 @@ a:nth-child(3) {
   top: 0;
   width: 100%;
   aspect-ratio: 2;
-  
 }
-.proyecto-banner img{
+.proyecto-banner img {
   position: relative;
   width: 100%;
   height: 100%;
@@ -382,12 +432,6 @@ a:nth-child(3) {
 
 footer {
   background-color: var(--secondary-color);
+  height: 2rem;
   padding: 0.5rem;
-}
-.foot-elementos {
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  margin: 0;
 }
