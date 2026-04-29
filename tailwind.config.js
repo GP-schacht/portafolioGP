@@ -12,7 +12,12 @@ export default {
         background: '#000000',
         text: '#ffffff',
       },
-      fontSize: {
+      fontFamily: {
+  display: ['Space Grotesk', 'sans-serif'],
+  body: ['Inter', 'sans-serif'],
+  code: ['JetBrains Mono', 'monospace'],
+},
+fontSize: {
   'display': ['3.5rem', { lineHeight: '1.1', letterSpacing: '-0.02em' }],
   'h1': ['2.5rem', { lineHeight: '1.2', letterSpacing: '-0.01em' }],
   'h2': ['2rem', { lineHeight: '1.25' }],
