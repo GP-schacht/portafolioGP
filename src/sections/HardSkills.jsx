@@ -28,7 +28,7 @@ export default function HardSkills() {
         <span className="w-1.5 h-8 bg-primary rounded-full" />
         <h2 className="text-h1 font-bold text-text">Hard Skills</h2>
       </div>
-      <div className="grid grid-cols-[repeat(auto-fit,minmax(130px,1fr))] gap-1.2rem">
+      <div className="grid grid-cols-[repeat(auto-fit,minmax(130px,1fr))] gap-[1.2rem]">
         {tools.map(([srcImg, descripcion, href]) => (
           <Card key={href} srcImg={srcImg} descripcion={descripcion} href={href} />
         ))}
