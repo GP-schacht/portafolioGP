@@ -12,15 +12,16 @@ export default {
         background: '#000000',
         text: '#ffffff',
       },
-      keyframes: {
-        carousel: {
-          '0%': { transform: 'translateX(0%)' },
-          '100%': { transform: 'translateX(-200%)' },
-        },
-      },
-      animation: {
-        carousel: 'carousel 25s linear infinite',
-      },
+      fontSize: {
+  'display': ['3.5rem', { lineHeight: '1.1', letterSpacing: '-0.02em' }],
+  'h1': ['2.5rem', { lineHeight: '1.2', letterSpacing: '-0.01em' }],
+  'h2': ['2rem', { lineHeight: '1.25' }],
+  'h3': ['1.5rem', { lineHeight: '1.3' }],
+  'body': ['1rem', { lineHeight: '1.5' }],
+  'sm': ['0.875rem', { lineHeight: '1.5' }],
+  'xs': ['0.75rem', { lineHeight: '1.5', letterSpacing: '0.05em' }],
+},
+      
     },
   },
   plugins: [],
