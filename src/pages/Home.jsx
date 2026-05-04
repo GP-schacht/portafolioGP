@@ -6,6 +6,7 @@ import Proyectos from '../sections/Projects.jsx'
 import Hard from '../sections/HardSkills.jsx'
 import Soft from '../sections/SoftSkills.jsx'
 import Contacto from '../sections/Contacto.jsx'
+import Exp from '../sections/Experience.jsx'
 export default function Home() {
   return (
     <div className="min-h-screen bg-background text-text">
@@ -14,6 +15,7 @@ export default function Home() {
         <About />
         <Soft/>
         <Hard />
+        <Exp/>
         <Contacto/>
         <Proyectos />
       </main>

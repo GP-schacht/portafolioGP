@@ -152,12 +152,12 @@ export default function Banner() {
 
         <h1 className="font-serif text-display font-bold leading-none tracking-tight text-text m-0"
           style={{ fontFamily: "'Playfair Display', serif" }}>
-          Gael
-          <span className="block text-h1 font-normal italic text-primary/90">Pereira</span>
+          Gael pereira
+          <span className="block text-h1 font-normal italic text-primary/90">Full Stack Developer</span>
         </h1>
 
         <div className="flex gap-8 border-t border-primary/20 pt-5">
-          {[{ n: '22', label: 'Años' }, { n: '3', label: 'Proyectos' }].map(({ n, label }, i) => (
+          {[{ n: '23', label: 'Años' }, { n: '6', label: 'Proyectos' }].map(({ n, label }, i) => (
             <div key={label} className="flex items-center gap-8">
               {i > 0 && <div className="w-px h-10 bg-primary/20" />}
               <div className="flex flex-col gap-0.5">
