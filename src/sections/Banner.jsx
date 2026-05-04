@@ -152,7 +152,7 @@ export default function Banner() {
 
         <h1 className="font-serif text-display font-bold leading-none tracking-tight text-text m-0"
           style={{ fontFamily: "'Playfair Display', serif" }}>
-          Gael pereira
+          Gael Pereira
           <span className="block text-h1 font-normal italic text-primary/90">Full Stack Developer</span>
         </h1>
 
